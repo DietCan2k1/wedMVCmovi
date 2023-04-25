@@ -10,6 +10,8 @@ namespace MoviWed.Database
 
         public DbSet<CategoryModels> category { get; set; }
 
+        public DbSet<Users> users { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
